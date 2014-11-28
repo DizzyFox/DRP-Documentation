@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Linfiniti Sphinx Theme &mdash; DRP 001 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="DRP 001 documentation" href="../../index.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="fa fa-home"> DRP</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="simple">
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">DRP</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Linfiniti Sphinx Theme</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="../../_sources/themes/timlinux/README.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="linfiniti-sphinx-theme">
+<h1>Linfiniti Sphinx Theme<a class="headerlink" href="#linfiniti-sphinx-theme" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="example">
+<h2>Example:<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>The example below should give you an idea of what your sphinx markup should
+look like when using this theme.</p>
+<img alt="https://github.com/timlinux/linfiniti-sphinx-theme/raw/master/screenshot.jpeg" src="https://github.com/timlinux/linfiniti-sphinx-theme/raw/master/screenshot.jpeg" />
+</div>
+<div class="section" id="license">
+<h2>License:<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>This is a theme for the <a class="reference external" href="http://sphinx.pocoo.org/">sphinx documentation system</a> based on the <a class="reference external" href="http://twitter.github.com/bootstrap/">bootstrap css framework</a>. It also uses a few icons from the
+free <a class="reference external" href="http://www.icojoy.com/articles/26/">34aL volume 3.2 SE</a> icon set.</p>
+<p>The base layout.html is taken from the default sphinx theme and modified.</p>
+<p>Bootstrap is provided under the Apache License Version 2.0 license, a copy
+of which is included under static/bootstrap/LICENSE.txt</p>
+<p>This theme is the original work of Tim Sutton, Linfiniti Consulting CC and made
+available under the Creative Commons Share-Alike license. More about this
+license can be found <a class="reference external" href="http://creativecommons.org/licenses/by-sa/3.0/">here</a>.</p>
+<p>Please do not remove our name / license logo from the theme without our
+permission.</p>
+</div>
+<div class="section" id="simple-installation-usage">
+<h2>Simple Installation &amp; Usage:<a class="headerlink" href="#simple-installation-usage" title="Permalink to this headline">¶</a></h2>
+<p>We assume that you already have a sphinx documentation project (read their
+documentation for advice on how to do that). In order to use this theme, you
+can either install it in a central location (if you plan to use it for more
+then one project) or install a copy of it with your sphinx documentation
+project (recommended route, explained here).</p>
+<p>You can get the latest version of this theme as a unix &#8216;tarball&#8217; <a class="reference external" href="https://github.com/timlinux/linfiniti-sphinx-theme/tarball/master">here</a>, or if
+you prefer, the latest version is available as a zip file <a class="reference external" href="https://github.com/timlinux/linfiniti-sphinx-theme/zipball/master">here</a>.</p>
+<p>Assuming you have extracted this theme under:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;your sphinx project&gt;/linfiniti-sphinx-theme
+</pre></div>
+</div>
+<p>and your documentation sources live in a subdirectory e.g.:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;your sphinx project&gt;/source
+</pre></div>
+</div>
+<p>then modify your project/source/conf.py to include the theme directory and
+indicate that this theme should be used:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">html_theme</span> <span class="o">=</span> <span class="s">&#39;linfiniti-sphinx-theme&#39;</span>
+<span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;..&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Then regenerate your documentation:</p>
+<div class="highlight-python"><div class="highlight"><pre>make html
+</pre></div>
+</div>
+<p>And you should see a new theme activated on your html output when opening
+it with a web browser.</p>
+</div>
+<div class="section" id="advanced-installation-as-a-git-submodule">
+<h2>Advanced installation (as a git submodule):<a class="headerlink" href="#advanced-installation-as-a-git-submodule" title="Permalink to this headline">¶</a></h2>
+<p>As an alternative to downloading the theme as a zip file, you can use git
+submodule support to include it in your git project:</p>
+<div class="highlight-python"><div class="highlight"><pre>git submodule add git@github.com:timlinux/linfiniti-sphinx-theme.git linfiniti-sphinx-theme
+git submodule
+git submodule init linfiniti-sphinx-theme
+git submodule update linfiniti-sphinx-theme
+git status
+git commit -m &quot;Import linfiniti-sphinx-theme as a git submodule&quot; -a
+git push
+make html
+</pre></div>
+</div>
+<p>The above being a typical workflow to incorporate the theme as a submodule in
+your project.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The theme is frozen at the particular version that was current when
+you perform the git submodule update command.</p>
+</div>
+<p>If you wish to obtain updates to the theme submodule, the procedure is
+something like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>cd &lt;your sphinx project&gt;/linfiniti-sphinx-theme
+git pull
+cd ..
+</pre></div>
+</div>
+<p>Then commit the fact that the submodule now tracks a different SHA1:</p>
+<div class="highlight-python"><div class="highlight"><pre>git commit -am &quot;Updates linfiniti theme to latest version&quot;
+</pre></div>
+</div>
+</div>
+<div class="section" id="reporting-issues">
+<h2>Reporting issues:<a class="headerlink" href="#reporting-issues" title="Permalink to this headline">¶</a></h2>
+<p>If you encounter problems using this theme, please use the <a class="reference external" href="https://github.com/timlinux/linfiniti-sphinx-theme/issues">github issue</a> tracker to let us
+know.</p>
+</div>
+<div class="section" id="contributions">
+<h2>Contributions:<a class="headerlink" href="#contributions" title="Permalink to this headline">¶</a></h2>
+<p>There are a number of theme elements that are not yet realised in this theme.
+If you have improved the theme, please share your improvements via a github pull
+request or a patch so that others may also benifit from your work as you have
+from ours.</p>
+</div>
+<div class="section" id="localised-changes-to-css">
+<h2>Localised Changes to CSS:<a class="headerlink" href="#localised-changes-to-css" title="Permalink to this headline">¶</a></h2>
+<p>Please do not modify the <cite>static/bootstrap</cite> directory contents directly as this is a
+verbatim copy from the bootstrap project. Rather add your css improvements to
+<cite>staticlinfiniti.css</cite>.</p>
+</div>
+<div class="section" id="history">
+<h2>History:<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h2>
+<p>We developed this theme for some in-house projects we were working on, but
+decided to &#8216;put it out there&#8217; since we started using the theme in some of our
+contributions to the <a class="reference external" href="http://qgis.org">Quantum GIS (QGIS)</a> project too.</p>
+</div>
+<div class="section" id="contact">
+<h2>Contact:<a class="headerlink" href="#contact" title="Permalink to this headline">¶</a></h2>
+<p>If you wish to contact us (we always enjoy hearing from people who appreciate
+the work we do), please email us at <a class="reference external" href="mailto:tim&#37;&#52;&#48;linfiniti&#46;com">tim<span>&#64;</span>linfiniti<span>&#46;</span>com</a>.</p>
+<p>Tim Sutton, 9 April 2011</p>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, Arturo.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'001',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
